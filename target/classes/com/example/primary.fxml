@@ -22,7 +22,7 @@
       </VBox>
       <HBox alignment="CENTER" prefHeight="44.0" prefWidth="217.0" spacing="42.0">
          <children>
-            <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#adicionarCredencial" prefHeight="25.0" prefWidth="60.0" text="salvar " textOverrun="CENTER_WORD_ELLIPSIS" />
+            <Button contentDisplay="CENTER" disable="true" mnemonicParsing="false" onAction="#adicionarCredencial" prefHeight="25.0" prefWidth="60.0" text="salvar " textOverrun="CENTER_WORD_ELLIPSIS" />
          </children>
       </HBox>
       <ListView fx:id="listSenha" prefHeight="328.0" prefWidth="393.0" />

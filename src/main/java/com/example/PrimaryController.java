@@ -2,7 +2,6 @@ package com.example;
 
 import java.sql.DriverManager;
 import java.sql.SQLException;
-
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
@@ -21,6 +20,8 @@ public class PrimaryController {
     @FXML
     TextField txtSenha;
     @FXML
+    Button proximo;
+    @FXML
     Button salvar;
     
 
@@ -36,7 +37,7 @@ public class PrimaryController {
         //conectar com o banco
         
         final String USER = "rm99004";
-        final String PASS = "24466666";
+        final String PASS = "270805";
         
         final String URL = "jdbc:oracle:thin:@oracle.com.br:1521:orcl";
 
@@ -73,10 +74,10 @@ public class PrimaryController {
         adicionarCredencial();
     }
 
-    public void mostraeCredencial() {
+    public void mostrarCredencial() {
         //conectar com o banco
         final String USER = "rm99004";
-        final String PASS = "24466666";
+        final String PASS = "270805";
         
         final String URL = "jdbc:oracle:thin:@oracle.com.br:1521:orcl";
 
@@ -106,7 +107,9 @@ public class PrimaryController {
 
 
     public void verificarCredencial() {
-       if(txtChave.getText().toString().equals("1234567")){
+        System.out.println(txtChave.getText().toString().equals("270805"));
+
+       if(txtChave.getText().toString().equals("270805")){
         System.out.println("Ta certo miseravi");
         salvar.setDisable(true);
        }
